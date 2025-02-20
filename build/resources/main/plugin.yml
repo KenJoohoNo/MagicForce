@@ -1,0 +1,19 @@
+name: MagicForce
+version: '1'
+main: kenjoohono.magicForce.MagicForce
+api-version: '1.21'
+commands:
+  강화:
+    description: MagicForce
+  강화권등록:
+    description: "손에 든 아이템을 강화권으로 등록합니다."
+    usage: "/강화권등록"
+    permission: magicforce.ticket
+  확정강화권등록:
+    description: "손에 든 아이템을 확정강화권으로 등록합니다."
+    usage: "/확정강화권등록"
+    permission: magicforce.ticket
+  최종강화권등록:
+    description: "손에 든 아이템을 최종강화권으로 등록합니다."
+    usage: "/최종강화권등록"
+    permission: magicforce.ticket
