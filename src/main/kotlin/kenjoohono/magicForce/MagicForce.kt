@@ -2,10 +2,7 @@ package kenjoohono.magicForce
 
 import kenjoohono.magicForce.command.UpgradeCommand
 import kenjoohono.magicForce.command.TicketCommand
-import kenjoohono.magicForce.event.onMagicForceGuiClose
-import kenjoohono.magicForce.event.EnhancementEvent
-import kenjoohono.magicForce.event.SwapEvent
-import kenjoohono.magicForce.event.FinalEnhancementManager
+import kenjoohono.magicForce.event.*
 import org.bukkit.plugin.java.JavaPlugin
 
 class MagicForce : JavaPlugin() {
@@ -18,6 +15,7 @@ class MagicForce : JavaPlugin() {
         server.pluginManager.registerEvents(EnhancementEvent(), this)
         server.pluginManager.registerEvents(SwapEvent(), this)
         server.pluginManager.registerEvents(onMagicForceGuiClose(), this)
+        server.pluginManager.registerEvents(AntiAnvil(), this)
         server.pluginManager.registerEvents(FinalEnhancementManager, this)
     }
 
