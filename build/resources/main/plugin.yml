@@ -2,6 +2,7 @@ name: MagicForce
 version: '1'
 main: kenjoohono.magicForce.MagicForce
 api-version: '1.21'
+depend: ["PlaceholderAPI"]
 commands:
   강화:
     description: MagicForce
