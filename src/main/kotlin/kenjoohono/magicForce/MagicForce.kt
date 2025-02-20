@@ -16,6 +16,7 @@ class MagicForce : JavaPlugin() {
         server.pluginManager.registerEvents(SwapEvent(), this)
         server.pluginManager.registerEvents(onMagicForceGuiClose(), this)
         server.pluginManager.registerEvents(AntiAnvil(), this)
+        server.pluginManager.registerEvents(AntiEnchantingTable(), this)
         server.pluginManager.registerEvents(FinalEnhancementManager, this)
     }
 
