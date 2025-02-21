@@ -14,7 +14,7 @@ class AntiEnchantingTable : Listener {
         if (!item.hasItemMeta()) return
         val meta = item.itemMeta
         val lore = meta.lore ?: return
-        if (lore.any { it.contains("★" ) }) {
+        if (lore.any { ChatColor.stripColor(it)?.contains("★") == true }) {
             event.isCancelled = true
             event.whoClicked.sendMessage("${ChatColor.RED}강화된 아이템은 마법부여를 할 수 없습니다.")
         }
