@@ -1,5 +1,6 @@
 package kenjoohono.magicForce
 
+import kenjoohono.magicForce.command.FixedCommand
 import kenjoohono.magicForce.command.UpgradeCommand
 import kenjoohono.magicForce.command.TicketCommand
 import kenjoohono.magicForce.event.*
@@ -14,6 +15,7 @@ class MagicForce : JavaPlugin() {
         getCommand("강화권등록")?.setExecutor(TicketCommand())
         getCommand("확정강화권등록")?.setExecutor(TicketCommand())
         getCommand("최종강화권등록")?.setExecutor(TicketCommand())
+        getCommand("magicforcefix")?.setExecutor(FixedCommand(this))
         server.pluginManager.registerEvents(EnhancementEvent(), this)
         server.pluginManager.registerEvents(SwapEvent(), this)
         server.pluginManager.registerEvents(onMagicForceGuiClose(), this)
